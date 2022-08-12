@@ -27,6 +27,7 @@ public class Bot extends JFrame {
         WebElement profile = driver.findElement(By.className("_4bl7"));
         profile.click();
 
+        while (true) if (driver.findElement(By.className("pzggbiyp")).isDisplayed()) break;
         WebElement profilePicture = driver.findElement(By.className("pzggbiyp"));
         profilePicture.click();
         while (true) if (driver.findElement(By.className("mpmpiqla")).isDisplayed()) break;
