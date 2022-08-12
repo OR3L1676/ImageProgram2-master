@@ -27,14 +27,13 @@ public class Bot extends JFrame {
         WebElement profile = driver.findElement(By.className("_4bl7"));
         profile.click();
 
-//        while (true) if (driver.findElement(By.className("gmql0nx0")).isDisplayed()) break;
-//
-//        WebElement profilePicture = driver.findElement(By.className("mpmpiqla"));
-//        profilePicture.click();
-//        while (true) if (driver.findElement(By.className("mpmpiqla")).isDisplayed()) break;
-//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        WebElement profilePicture = driver.findElement(By.className("pzggbiyp"));
+        profilePicture.click();
+        while (true) if (driver.findElement(By.className("mpmpiqla")).isDisplayed()) break;
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
-        WebElement profilePictureXPath = driver.findElement(By.xpath("//img[@class='_11kf img']"));
+        WebElement profilePictureXPath = driver.findElement(By.xpath("//img[@data-visualcompletion='media-vc-image']"));
+
 
         String str = profilePictureXPath.getAttribute("src");
 
